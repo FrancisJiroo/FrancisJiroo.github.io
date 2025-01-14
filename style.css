@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    background-color: #1d1d1e;
+    cursor: pointer;
+}
+header{
+    background-color: gray;
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+.header{
+    margin: 0;
+}
+.socials{
+    margin-left: auto;
+    
+}
+ul li{
+    display: inline;
+    font-family: Silkscreen;
+    margin: 10px;
+    border: solid 0px;
+    transition: all .5s;
+    font-size: 20px;
+}
+.socials ul li:hover{
+    font-size: 20px;
+    border-bottom: 5px solid;
+    margin: 2vw;
+    color: gold;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.h1header{
+    margin-left: 20px;
+    font-family: Silkscreen;
+    color: black;
+    transition: all .5s;
+}
+.h1header:hover{
+    background: rgb(183,195,34);
+    background: linear-gradient(0deg, rgba(183,195,34,1) 0%, rgba(253,139,45,1) 100%);
+    background-clip: text;
+    color: transparent;
+    text-shadow: yellow 2px 2px 15px, orange 2px 2px 2px;
+}
+.home{
+    width: 30vw;
+}
+marquee{
+    font-family: sans-serif;
+    margin-top: 0;
+    width: 100vw;
+}
+a{
+    all:unset;
+}
+
+.fb{
+    color: blue;
+}
+.ig{
+    color: rgb(255, 2, 44);
+}
+.tiktok{
+    color: black;
+    margin-right: 50px;
+}
+@keyframes divgap{
+    0%{
+        gap: 0;
+    }
+    100%{
+        gap: 5vw;
+    }
+}
+.introduction{
+    animation: divgap 10s ease;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+@keyframes splash{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 20vw;
+    }
+}
+
+.picarea{
+    height:min-content;
+    border: 4px outset gold;
+    transform-origin: 65% 75%;
+    transition: .5s ease-out;
+    overflow: hidden;
+    animation: splash 2s ease;
+    transition: .5s ease;
+
+}
+.jiropic{
+    background-image: url(jiro.jpg);
+    background-color: white;
+    width: auto;
+    height: 50vh;
+    aspect-ratio: 3/4;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 0vw;
+    transition: .5s ease-in;
+}
+.jiropic:hover{
+    transform: scale(3) rotate(10deg);
+    background-position-y: 3vw;
+    transition: .5s ease-out;
+}
+.picarea:hover{
+    border: white solid;
+    border-radius: 40px;
+    transition: .5s ease;
+    box-shadow: gold 0px 0px 15px;
+}
+.introtext > p, h1{
+    margin: 0;
+    animation: splash 2s;
+    width: 20vw;
+}
+
+.introtext > p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color:darkolivegreen;
+}
+.introtext > h1{
+    color: white;
+    font-style: italic;
+    transform: translateX(5px);
+}
+.introtext > p > a{
+    color: orange;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: .5s;
+    
+}
+.introtext > p > a:hover{
+    background-color: white;
+    transition: .5s;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: blue;
+}
+.moresocials{
+    font-family: Silkscreen;
+    font-size: 20px;
+    color: white;
+    transition: .5s ease-out;
+    border-top: white solid 4px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom: white 3px solid;
+
+}
+.yt{
+    color:red;
+}
+.scratch{
+    color: orange;
+}
+.gh{
+    color: white;
+}
+.yt:hover{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.scratch:hover{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+.gh:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
