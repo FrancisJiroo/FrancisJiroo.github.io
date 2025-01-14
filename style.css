@@ -52,6 +52,7 @@ marquee{
     font-family: sans-serif;
     margin-top: 0;
     width: 100vw;
+    color: white;
 }
 a{
     all:unset;
