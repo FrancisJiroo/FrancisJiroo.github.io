@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: #1d1d1e;
     cursor: pointer;
+    animation: splash 5s ease;
 }
 header{
     background-color: gray;
@@ -61,7 +62,7 @@ a{
     color: blue;
 }
 .ig{
-    color: rgb(255, 2, 44);
+    color: pink;
 }
 .tiktok{
     color: black;
@@ -83,28 +84,30 @@ a{
 }
 @keyframes splash{
     0%{
-        width: 0vw;
+        transform: skew(30deg);
+
     }
     100%{
-        width: auto;
+        transform: skew(0deg);
+        zoom: 100%;
     }
 }
 
 .picarea{
+    transition: all;
     height:min-content;
     border: 4px outset gold;
     transform-origin: 65% 75%;
     transition: .5s ease-out;
     overflow: hidden;
-    animation: splash 2s ease;
     transition: .5s ease;
 
 }
 .jiropic{
+    
     background-image: url(jiro.jpg);
     background-color: white;
-    width: auto;
-    height: 50vh;
+    height: 40vh;
     aspect-ratio: 3/4;
     background-size: cover;
     background-position: center;
